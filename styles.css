@@ -1,6 +1,60 @@
+body {
+    min-width: 1000px;
+}
+
 body div {
     height: 100vh;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grid2x3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto 100px;
+}
+
+.grid2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+p {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.strikeThrough {
+    text-decoration: line-through;
+}
+
+.dk_effect {
+    background-image: url('./images//dk_effect_960w_640h.jpg');
+    background-repeat: no-repeat;
+    background-position: initial;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* background-color: black; */
+}
+
+pre {
+    box-sizing: border-box;
+    background-color: lavender;
+    margin: 40px 20px !important;
+    border-radius: .9em;
 }
