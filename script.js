@@ -4,7 +4,7 @@ var speed = 200; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
     if (i < txt.length) {
-        document.getElementById("typeWrite").innerHTML += txt.charAt(i);
+        document.getElementById("typeWrite_intro").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
     }
