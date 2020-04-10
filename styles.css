@@ -8,8 +8,15 @@ body div {
     height: 100vh;
 }
 
+h1, h1 span.wrap {
+    font-size: 25px
+}
+
+p, span {
+    font-size: 17px;
+}
+
 p {
-    font-weight: 700;
     font-style: italic;
     text-align: center;
 }
