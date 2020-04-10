@@ -15,14 +15,17 @@
     </style>
 </head>
 
-<body onload="typeWriter()">
+<body>
     <!-- Add a three page disclaimer -->
     <div class="flexColumn">
         <h1>Hi</h1>
-        <p>You mean a lot<span id="typeWrite_intro"></span></p>
+        <p>You mean a lot<span class="typeWriter" id="typeWrite_intro"></span></p>
     </div>
     <div class="flex">
-        <h1 id="typeWrite_name"> Vandita, 1DTA, 1D, Bandi</h1> <!-- Add more names in the type writer format-->
+        <h1 class="typewrite typeWriter" id="typeWrite_name" data-period="2000" data-type='[ "Vandita", "1D", "1DTA", "Bandi" ]'>
+            <span class="wrap"></span>
+        </h1>
+        <!-- Add more names in the type writer format-->
     </div>
     <div class="grid2x3">
         <pre class="flex"><code>&lt;button&gt;Button&lt;&sol;button&gt;</code></pre>
