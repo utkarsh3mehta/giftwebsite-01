@@ -8,6 +8,12 @@ body div {
     height: 100vh;
 }
 
+p {
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
 .typeWriter {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
@@ -57,13 +63,6 @@ body div {
     align-items: center;
 }
 
-.grid2x3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: auto 100px;
-}
-
 .grid2x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -72,27 +71,44 @@ body div {
     row-gap: 10px;
 }
 
-p {
-    font-weight: 700;
-    font-style: italic;
-}
-
 .strikeThrough {
     text-decoration: line-through;
 }
 
 .dk_effect {
     background-image: url('./images//dk_effect_960w_640h.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: initial;
     /* background-attachment: fixed; */
-    background-size: cover;
+    background-size: 400px 300px;
     /* background-color: black; */
 }
 
-pre {
-    box-sizing: border-box;
+span.dk_effect {
+    background-image: none;
+    color: white;
+    background-color: black;
+}
+
+.mindfulMeme pre {
     background-color: lavender;
-    margin: 40px 20px !important;
     border-radius: .9em;
+}
+
+.mindfulMeme hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+@media screen and (min-width: 641px) {
+    .mindfulMeme {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: auto 10%;
+    }
+    .mindfulMeme hr {
+        display: none;
+    }
 }
