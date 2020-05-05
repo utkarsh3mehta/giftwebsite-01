@@ -57,6 +57,17 @@ p {
     }
 }
 
+.downArrowFirstPage {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: unset;
+}
+
+.downArrowFirstPage span {
+    font-size: 60px;
+}
+
 .flexColumn {
     display: flex;
     flex-direction: column;
