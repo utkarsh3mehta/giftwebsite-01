@@ -90,7 +90,7 @@ btn.onclick = function () {
 }
 span.onclick = function () {
     typeWriter()
-    modal.style.display = "none";    
+    modal.style.display = "none";
 }
 window.onclick = function (event) {
     if (event.target == modal) {
