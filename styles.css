@@ -165,28 +165,55 @@ span.dk_effect {
 .mindfulMeme pre {
     background-color: lavender;
     border-radius: .9em;
+    /* flex: 1; */
 }
 
-.mindfulMeme hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 80%;
+.mindfulMeme div {
+    height: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1;
+    width: 100%;
 }
 
-p.tphtsfy {
-    margin-bottom: 30px;
+div.mindfulMeme.gridMind {
+    display: none;
+}
+
+.mindfulMeme div.hobbyist {
+    background-image: url('./images/hobbyist.png');
+}
+
+.mindfulMeme div.expertDev {
+    background-image: url('./images/expertDev.png');
+}
+
+.mindfulMeme div.vandiDev {
+    background-image: url('./images/vanditaDev.png');
+}
+
+.mindfulMeme div.flex.vandiDev span, .mindfulMeme div.flex.expertDev span, .mindfulMeme div.flex.hobbyist span{
+    color: white;
+    background-color: black;
 }
 
 @media screen and (min-width: 641px) {
-    .mindfulMeme {
+    div.mindfulMeme.gridMind {
         display: grid;
+    }
+    .mindfulMeme {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: auto 10%;
     }
-    .mindfulMeme hr {
+    div.mindfulMeme.flexMind {
         display: none;
     }
+}
+
+p.tphtsfy {
+    margin-bottom: 30px;
 }
 
 /* Slideshow container */
