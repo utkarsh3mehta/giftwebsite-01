@@ -148,12 +148,29 @@ p.modal-footer {
 }
 
 .dk_effect {
-    background-image: url('./images//dk_effect_960w_640h.jpg');
+    background-image: url('./images/dk_effect_960w_640h.jpg');
     background-repeat: repeat;
     background-position: initial;
     /* background-attachment: fixed; */
-    background-size: 400px 300px;
+    background-size: 200px 150px;
     /* background-color: black; */
+}
+
+.whyyoulikethis {
+    background-image: url('./images/whyyoulikethis.png');
+    background-repeat: repeat;
+    background-position: initial;
+    /* background-attachment: fixed; */
+    background-size: 200px 150px;
+}
+
+@media screen and (min-width: 641px) {
+    .dk_effect {
+        background-size: 400px 300px;
+    }
+    .whyyoulikethis {
+        background-size: 400px 300px;
+    }
 }
 
 span.dk_effect {
@@ -193,7 +210,7 @@ div.mindfulMeme.gridMind {
     background-image: url('./images/vanditaDev.png');
 }
 
-.mindfulMeme div.flex.vandiDev span, .mindfulMeme div.flex.expertDev span, .mindfulMeme div.flex.hobbyist span{
+.mindfulMeme div.flex.vandiDev span, .mindfulMeme div.flex.expertDev span, .mindfulMeme div.flex.hobbyist span {
     color: white;
     background-color: black;
 }
@@ -293,4 +310,8 @@ p.tphtsfy {
     to {
         opacity: 1
     }
+}
+
+p.capitalize {
+    text-transform: uppercase;
 }
