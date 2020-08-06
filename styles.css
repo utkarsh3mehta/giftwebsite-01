@@ -4,8 +4,8 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-body div {
-    height: 100vh;
+body>div {
+    min-height: 100vh;
 }
 
 h1, h1 span.wrap {
@@ -164,15 +164,6 @@ p.modal-footer {
     background-size: 200px 150px;
 }
 
-@media screen and (min-width: 641px) {
-    .dk_effect {
-        background-size: 400px 300px;
-    }
-    .whyyoulikethis {
-        background-size: 400px 300px;
-    }
-}
-
 span.dk_effect {
     background-image: none;
     color: white;
@@ -226,6 +217,12 @@ div.mindfulMeme.gridMind {
     }
     div.mindfulMeme.flexMind {
         display: none;
+    }
+    .dk_effect {
+        background-size: 400px 300px;
+    }
+    .whyyoulikethis {
+        background-size: 400px 300px;
     }
 }
 
@@ -314,4 +311,26 @@ p.tphtsfy {
 
 p.capitalize {
     text-transform: uppercase;
+}
+
+.photoContainer>h1 {
+    margin-bottom: 55px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.photos>div.flexColumn {
+    justify-content: flex-start !important;
+    /* align-items: flex-start !important; */
+}
+
+.photos img {
+    width: 33vw;
+    box-sizing: border-box;
+    margin: 5px;
+    box-shadow: 2px 2px 4px gray;
 }

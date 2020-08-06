@@ -1,6 +1,5 @@
 var i = 0;
 var txt = ', I hope, to someone.'; /* The text */
-var speed = 200; /* The speed/duration of the effect in milliseconds */
 var slideIndex = 0;
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
@@ -17,7 +16,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 2 seconds
+    setTimeout(showSlides, 7000); // Change image every 7 seconds
 }
 
 btn.onclick = function () {
