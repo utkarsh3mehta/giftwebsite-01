@@ -1,7 +1,9 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+    outline: none;
 }
 
 body>div {
@@ -147,6 +149,10 @@ p.modal-footer {
     text-decoration: line-through;
 }
 
+.container {
+    padding: 25px;
+}
+
 .dk_effect {
     background-image: url('./images/dk_effect_960w_640h.jpg');
     background-repeat: repeat;
@@ -253,7 +259,7 @@ p.tphtsfy {
 
 .text {
     color: #000;
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 10px;
     padding-bottom: 40px;
     width: 100%;
@@ -313,24 +319,31 @@ p.capitalize {
     text-transform: uppercase;
 }
 
+.photoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 .photoContainer>h1 {
     margin-bottom: 55px;
 }
 
 .photos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-}
-
-.photos>div.flexColumn {
-    justify-content: flex-start !important;
-    /* align-items: flex-start !important; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .photos img {
-    width: 30vw;
-    box-sizing: border-box;
-    margin: 5px;
+    width: 100%;
+    margin: 5px 0;
     box-shadow: 2px 2px 4px gray;
+    align-self: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
+    .photos img {
+        width: 30%;
+        margin: 5px;
+    }
 }
