@@ -10,8 +10,24 @@ body>div {
     min-height: 100vh;
 }
 
-h1, h1 span.wrap {
+h1.small, h1 span.wrap {
     font-size: 25px
+}
+
+.happyBudday>h1 {
+    font-size: 50px;
+    color: #f495bf;
+    background-color: white;
+}
+
+.happyBudday>h2 {
+    color: #710403;
+    background-color: white;
+    font-size: 45px;
+}
+
+.happyBudday>img {
+    width: 100vw;
 }
 
 p, span {
@@ -96,6 +112,11 @@ p.modal-footer {
     margin-top: 20px;
 }
 
+.painfulLiam>p.modal-footer {
+    font-size: 80px;
+    background-color: white;
+}
+
 .close {
     color: #aaa;
     float: right;
@@ -153,23 +174,6 @@ p.modal-footer {
     padding: 25px;
 }
 
-.dk_effect {
-    background-image: url('./images/dk_effect_960w_640h.jpg');
-    background-repeat: repeat;
-    background-position: initial;
-    /* background-attachment: fixed; */
-    background-size: 200px 150px;
-    /* background-color: black; */
-}
-
-.whyyoulikethis {
-    background-image: url('./images/whyyoulikethis.png');
-    background-repeat: repeat;
-    background-position: initial;
-    /* background-attachment: fixed; */
-    background-size: 200px 150px;
-}
-
 span.dk_effect {
     background-image: none;
     color: white;
@@ -193,23 +197,6 @@ span.dk_effect {
 
 div.mindfulMeme.gridMind {
     display: none;
-}
-
-.mindfulMeme div.hobbyist {
-    background-image: url('./images/hobbyist.png');
-}
-
-.mindfulMeme div.expertDev {
-    background-image: url('./images/expertDev.png');
-}
-
-.mindfulMeme div.vandiDev {
-    background-image: url('./images/vanditaDev.png');
-}
-
-.mindfulMeme div.flex.vandiDev span, .mindfulMeme div.flex.expertDev span, .mindfulMeme div.flex.hobbyist span {
-    color: white;
-    background-color: black;
 }
 
 @media screen and (min-width: 641px) {
@@ -319,6 +306,11 @@ p.capitalize {
     text-transform: uppercase;
 }
 
+.painfulLiam {
+    background-image: url('https://dsm01pap002files.storage.live.com/y4mU6VQkGHQlj1-6sj1KhUsRRfU0R06oN8scU6MvBYgmpA1GLZY4uncUt4PC8OblqhOAwlTV1ul1k4jLju-VDBsbCdGxR2pp84KuyhcpfPDqwcoWks_BWKghZaU0hDB4OxNGaEEfjnTgB9yK3kdxs7yVW2IuWF38qhFAGPUYdis9cYpiOhDUxsSCQ1exHa88gyi?width=699&height=322&cropmode=none');
+    background-attachment: fixed;
+}
+
 .photoContainer {
     display: flex;
     flex-direction: column;
@@ -342,6 +334,17 @@ p.capitalize {
 }
 
 @media only screen and (min-width: 768px) {
+    .happyBudday {
+        background-image: url('https://dsm01pap002files.storage.live.com/y4mgp_rcEez5sbe_v27gV8xhB1TouWTC8fC2mWforNaaMgz-tqfXso6SMnp-kKjH8xZTPOaBnG5UGsgFWHqJyj_1BxRjr6yPeG5wNKgmIghXTrJ3UeKoI7W8fCUxHZfig305ifv229z6m07t-lOKt0CP-EdNtfQqyPAxWorv7Feb6bgwekjrP81nMQb7OEQ2Q1u?width=660&height=293&cropmode=none');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .happyBudday>img {
+        display: none;
+    }
+    .painfulLiam>p.modal-footer {
+        font-size: 100px;
+    }
     .photos img {
         width: 30%;
         margin: 5px;

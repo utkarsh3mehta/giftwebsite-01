@@ -6,6 +6,7 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 showSlides();
+showSlides1();
 
 function showSlides() {
     var i;
@@ -16,7 +17,19 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 7000); // Change image every 7 seconds
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+function showSlides1() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides1, 4000); // Change image every 4 seconds
 }
 
 btn.onclick = function () {
