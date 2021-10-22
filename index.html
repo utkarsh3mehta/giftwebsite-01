@@ -1,78 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gift website for friends and family separated by the VID-19">
-    <title>Happy B'day &lt;Person&gt;</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Pubby | Happy Budday</title>
+    <link rel="stylesheet" href="my-styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2d45b3713e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- <div class="flex">Looking for a gift for yourself?</div> -->
-    <!-- Add a three page disclaimer -->
-    <button id="myBtn">Open Disclamer</button>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h1 class="small">Disclaimer</h1>
-            <br><br>
-            <p>
-                Some text for disclamer
-            </p>
-            <p class="modal-footer">#hashtags
-            </p>
-            <sub>Footer text</sub><br>
+    <div id="favourite-songs" class="vh-100 d-flex start align-center relative">
+        <h1 id="songs-title" class="text-center absolute">Your favourite songs</h1>
+        <div id="song-list" class="d-flex">
+        </div>
+        <div id="songs-left" class="arrow left d-flex center align-center absolute">
+            <i class="fas fa-step-backward"></i>
+        </div>
+        <div id="songs-right" class="arrow right d-flex center align-center absolute">
+            <i class="fas fa-step-forward"></i>
+        </div>
+        <div id="play-pause" class="arrow d-flex center align-center absolute">
+            <i class="fas fa-play"></i>
+        </div>
+        <div id="song-details" class="d-flex column center col-10 absolute">
+            <h1 id="song-name" class="col-12 text-center">Song</h1>
+            <span id="song-artist" class="col-12 text-center">Artist</span>
+            <!-- <embed id="song-url" src="" loop="true" autostart="true" hidden="true" /> -->
+            <audio id="song-url" hidden controls preload="auto"></audio>
         </div>
     </div>
-    <div class="flexColumn container happyBudday">
-        <h2>Happy Budday</h2>
-        <h1>Person!</h1>
-        <img src="https://images.pexels.com/photos/4621575/pexels-photo-4621575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="whatsapp group" />
-    </div>
-    <div class="flexColumn container">
-        <p class="tphtsfy">Things only you can say...</p>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <p class="numbertext">1 / 3</p>
-                <p class="text">Message 1 of 3</p>
-            </div>
-            <div class="mySlides fade">
-                <p class="numbertext">2 / 3</p>
-                <p class="text">Message 2 of 3</p>
-            </div>
-            <div class="mySlides fade">
-                <p class="numbertext">3 / 3</p>
-                <p class="text">Message 3 of 3</p>
-            </div>
-        </div>
-    </div>
-    <div class="flexColumn container">
-        <p class="tphtsfy">Things people want to say to you...</p>
-        <div class="slideshow-container">
-            <div class="mySlides1 fade">
-                <p class="numbertext">1 / 1</p>
-                <p class="text">Message 1 of 1</p>
-                <span class="quote">Name</span>
-            </div>
-        </div>
-    </div>
-    <div class="painfulLiam flexColumn">
-        <p class="modal-footer">#hashtag</p>
-    </div>
-    <div class="photoContainer">
-        <h1 class="container small">Some photos of you...</h1>
-        <div class="photos">
-            <img src="https://images.pexels.com/photos/4621575/pexels-photo-4621575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="image1" />
-            <img src="https://images.pexels.com/photos/4621575/pexels-photo-4621575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="image1" />
-            <img src="https://images.pexels.com/photos/4621575/pexels-photo-4621575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="image2" />
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>

@@ -1,0 +1,114 @@
+/* * {
+    border: 1px solid gray;
+} */
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+div#favourite-songs {
+    background: linear-gradient(45deg, black, darkgreen);
+}
+
+h1#songs-title {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+div#song-list {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+img.song-tile {
+    object-fit: contain;
+    min-height: 250px;
+    min-width: 250px;
+    width: 250px;
+    height: 250px;
+    opacity: 0.4;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+img.song-tile:first-child {
+    margin-left: calc((100vw - 250px) / 2);
+}
+
+img.song-tile:last-child {
+    margin-right: calc((100vw - 250px) / 2);
+}
+
+img.song-tile.active {
+    opacity: 1;
+}
+
+div.arrow {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+div.arrow.left {
+    left: 5%;
+}
+
+div.arrow.right {
+    right: 5%;
+}
+
+div.arrow#play-pause {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div#song-details {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+div#song-details>h1, div#song-details>span {
+    font-weight: 300;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    h1#songs-title {
+        top: 25%;
+    }
+    div.arrow.left {
+        left: 20%;
+    }
+    div.arrow.right {
+        right: 20%;
+    }
+    div#song-details {
+        bottom: 25%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1#songs-title {
+        top: 20%;
+    }
+    div.arrow.left {
+        left: 30%;
+    }
+    div.arrow.right {
+        right: 30%;
+    }
+    div#song-details {
+        bottom: 20%;
+    }
+}
