@@ -140,29 +140,6 @@ const songList = [
 ];
 
 const updateSongTiles = () => {
-  // console.log("updating song tiles");
-  // console.log(
-  //   "song list element",
-  //   songListElement,
-  //   "song tile",
-  //   songTile,
-  //   "song length",
-  //   songsLength,
-  //   "active song tile",
-  //   activeSongTile,
-  //   "left arrow",
-  //   songLeftArrow,
-  //   "right arrow",
-  //   songRightArrow,
-  //   "song name",
-  //   songName,
-  //   "song artist",
-  //   songArtist,
-  //   "song url",
-  //   songUrl,
-  //   "playpause",
-  //   playpause
-  // );
   songList.forEach((s, index) => {
     let image = document.createElement("img");
     image.src = s.tile;
@@ -183,7 +160,7 @@ const updateSongTiles = () => {
 const updateSongsScroller = () => {
   // console.log("updating song scroller");
   activeSongTile = songListElement.querySelector("img.song-tile.active");
-  activeSongTile.scrollIntoView({ inline: "center" });
+  activeSongTile.scrollIntoView({ inline: "center", block: "center" });
 };
 
 const checkActiveSongIndex = () => {
