@@ -178,6 +178,9 @@ img.wisher-photo {
     div.wish-wrap#utkarsh:before {
         background-image: url('https://dsm01pap002files.storage.live.com/y4m3sCjXQX284V5ub72Ou9ypN0M4aIXfMW5KZ8aAhPE2hRqYRFs219wLud7oN2WEjm_vsbA-r3Ck-7gfHamzm2zDZ1zcC_I5mMiSpmo7VosNlNHBQ1VTZ8_UJUnCk4I5aMYkSNZ739OH8N0_JwnM0UPapAEROi5EmxNJyI394WCOFJdjdwrHu3NlEVxyiEgwSCe?width=2316&height=2319&cropmode=none');
     }
+    div.wish-wrap#anushka:before {
+        background-image: url("https://dsm01pap002files.storage.live.com/y4mwIcOOU1YthWaAkeCqGdI9OtmCx8-3GrXC-ViEwlid_75CQtd0eGRVbcn3XRKJ9ZHWUB0dsGIxI0jCXsnD3T5ahKyYLlRLrlstUnKAkJqZv_EL3UieooxBWgzEUJno6cL_ozavjI6TS_DWlErhAE__GIJz2Vrbi-RVU2p_8qLgTYD3lC5RaLNYNvRRduuW8kU?width=616&height=828&cropmode=none");
+    }
 }
 
 @media screen and (min-width: 1024px) {
