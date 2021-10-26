@@ -83,6 +83,42 @@ div#song-details>h1, div#song-details>span {
     white-space: nowrap;
 }
 
+.first-section {
+    background: linear-gradient(315deg, white, black);
+}
+
+.wish-start>* {
+    font-weight: 100;
+}
+
+.wish-container>h3 {
+    font-weight: 100;
+}
+
+.wisher-personal-story {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.45;
+    color: #383838;
+}
+
+.wisher-personal-story:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 100px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}
+
+img.wisher-photo {
+    bottom: -10%;
+    filter: grayscale(100%);
+}
+
 @media screen and (min-width: 768px) {
     h1#songs-title {
         top: 25%;
@@ -95,6 +131,19 @@ div#song-details>h1, div#song-details>span {
     }
     div#song-details {
         bottom: 25%;
+    }
+    .wisher-personal-story:before {
+        font-size: 150px;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    img.wisher-photo {
+        bottom: -10% !important;
+        opacity: 1 !important;
+    }
+    div.wish-wrap:before {
+        display: none !important;
     }
 }
 
@@ -110,5 +159,29 @@ div#song-details>h1, div#song-details>span {
     }
     div#song-details {
         bottom: 20%;
+    }
+    div.wish-wrap:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        filter: grayscale(100%);
+        background-repeat: no-repeat;
+        background-position: 150% 0;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    div.wish-wrap#utkarsh:before {
+        background-image: url('https://dsm01pap002files.storage.live.com/y4m3sCjXQX284V5ub72Ou9ypN0M4aIXfMW5KZ8aAhPE2hRqYRFs219wLud7oN2WEjm_vsbA-r3Ck-7gfHamzm2zDZ1zcC_I5mMiSpmo7VosNlNHBQ1VTZ8_UJUnCk4I5aMYkSNZ739OH8N0_JwnM0UPapAEROi5EmxNJyI394WCOFJdjdwrHu3NlEVxyiEgwSCe?width=2316&height=2319&cropmode=none');
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    div.wish-wrap:before {
+        background-position: 100% 0%;
     }
 }
