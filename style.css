@@ -1,6 +1,6 @@
-/* * {
-    border: 1px solid gray;
-} */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
 
 .vh-100 {
     min-height: 100vh;
@@ -87,12 +87,9 @@ div#song-details>h1, div#song-details>span {
     background: linear-gradient(315deg, white, black);
 }
 
-.wish-start>* {
-    font-weight: 100;
-}
-
-.wish-container>h3 {
-    font-weight: 100;
+h2.wisher-name {
+    font-size: 40px;
+    text-align: center;
 }
 
 .wisher-personal-story {
@@ -119,6 +116,10 @@ img.wisher-photo {
     filter: grayscale(100%);
 }
 
+img.wisher-photo.long {
+    bottom: -20%;
+}
+
 @media screen and (min-width: 768px) {
     h1#songs-title {
         top: 25%;
@@ -138,6 +139,9 @@ img.wisher-photo {
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    .wisher-name {
+        text-align: center !important;
+    }
     img.wisher-photo {
         bottom: -10% !important;
         opacity: 1 !important;
@@ -159,6 +163,9 @@ img.wisher-photo {
     }
     div#song-details {
         bottom: 20%;
+    }
+    .wisher-name {
+        text-align: right;
     }
     div.wish-wrap:before {
         content: ' ';
