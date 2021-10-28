@@ -159,23 +159,20 @@ const songList = [
   },
 ];
 
-const updateSongTiles = () => {
-  songList.forEach((s, index) => {
-    let image = document.createElement("img");
-    image.src = s.tile;
-    image.classList.add("song-tile");
-    image.setAttribute("data-song-id", index);
-    if (index === 0) {
-      image.classList.add("active");
-    }
-    songListElement.append(image);
-  });
-  songTile = songListElement.querySelectorAll("img.song-tile");
-  songsLength = songTile.length;
-  activeSongTile = songListElement.querySelector("img.song-tile.active");
-  updateSongsScroller();
-  checkActiveSongIndex();
-};
+songList.forEach((s, index) => {
+  let image = document.createElement("img");
+  image.src = s.tile;
+  image.classList.add("song-tile");
+  image.setAttribute("data-song-id", index);
+  if (index === 0) {
+    image.classList.add("active");
+  }
+  songListElement.append(image);
+});
+
+songTile = songListElement.querySelectorAll("img.song-tile");
+songsLength = songTile.length;
+activeSongTile = songListElement.querySelector("img.song-tile.active");
 
 const updateSongsScroller = () => {
   // console.log("updating song scroller");
@@ -255,4 +252,4 @@ songUrl.addEventListener("pause", () => {
   playpauseIcon.classList.remove("fa-pause");
 });
 
-updateSongTiles();
+checkActiveSongIndex();
