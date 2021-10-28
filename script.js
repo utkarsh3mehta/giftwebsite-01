@@ -10,12 +10,23 @@ let songUrl = document.getElementById("song-url");
 let playpause = document.getElementById("play-pause");
 let playpauseIcon = playpause.querySelector("i");
 let parallaxImages = document.querySelectorAll(".parallax-layer");
+let wishVideos = document.querySelectorAll(".wisher-video");
 
 document.addEventListener("scroll", () => {
   let scroll = window.scrollY;
   parallaxImages.forEach((el) => {
     let speed = el.dataset.speed;
     el.style.transform = `translateY(${scroll * speed}px)`;
+  });
+});
+
+wishVideos.forEach((el) => {
+  el.addEventListener("play", () => {
+    songUrl.volume /= 2;
+  });
+
+  el.addEventListener("pause", () => {
+    songUrl.volume *= 2;
   });
 });
 
