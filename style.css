@@ -261,7 +261,7 @@ h2.wisher-name {
     text-align: center;
 }
 
-.wisher-personal-story {
+blockquote.wisher-personal-story, div.quotes > blockquote {
     font-family: Georgia, serif;
     font-size: 18px;
     font-style: italic;
@@ -269,7 +269,7 @@ h2.wisher-name {
     color: #383838;
 }
 
-.wisher-personal-story:before {
+blockquote.wisher-personal-story:before {
     display: block;
     padding-left: 10px;
     content: "\201C";
@@ -289,6 +289,24 @@ img.wisher-photo.long {
     bottom: -20%;
 }
 
+img.wisher-photo.extra-long {
+    bottom: -35%;
+}
+
+div.quotes > blockquote {
+    margin: 1em 0;
+    position: relative;
+}
+
+div.quotes > blockquote::before {
+    content: "\201C";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    font-size: 1.2em;
+    display: block;
+}
+
 @media screen and (min-width: 768px) {
     h1#songs-title {
         top: 25%;
@@ -302,7 +320,7 @@ img.wisher-photo.long {
     div#song-details {
         bottom: 25%;
     }
-    .wisher-personal-story:before {
+    blockquote.wisher-personal-story:before {
         font-size: 150px;
     }
 }
@@ -352,10 +370,16 @@ img.wisher-photo.long {
         background-attachment: fixed;
     }
     div.wish-wrap#utkarsh:before {
-        background-image: url('https://dsm01pap002files.storage.live.com/y4m3sCjXQX284V5ub72Ou9ypN0M4aIXfMW5KZ8aAhPE2hRqYRFs219wLud7oN2WEjm_vsbA-r3Ck-7gfHamzm2zDZ1zcC_I5mMiSpmo7VosNlNHBQ1VTZ8_UJUnCk4I5aMYkSNZ739OH8N0_JwnM0UPapAEROi5EmxNJyI394WCOFJdjdwrHu3NlEVxyiEgwSCe?width=2316&height=2319&cropmode=none');
+        background-image: url('https://assets-itkkids-001.fra1.cdn.digitaloceanspaces.com/prabjyot/utkarsh.png');
     }
     div.wish-wrap#anushka:before {
-        background-image: url("https://dsm01pap002files.storage.live.com/y4mwIcOOU1YthWaAkeCqGdI9OtmCx8-3GrXC-ViEwlid_75CQtd0eGRVbcn3XRKJ9ZHWUB0dsGIxI0jCXsnD3T5ahKyYLlRLrlstUnKAkJqZv_EL3UieooxBWgzEUJno6cL_ozavjI6TS_DWlErhAE__GIJz2Vrbi-RVU2p_8qLgTYD3lC5RaLNYNvRRduuW8kU?width=616&height=828&cropmode=none");
+        background-image: url("https://assets-itkkids-001.fra1.cdn.digitaloceanspaces.com/prabjyot/anushka.png");
+    }
+    div.wish-wrap#vandita:before {
+        background-image: url("https://assets-itkkids-001.fra1.cdn.digitaloceanspaces.com/prabjyot/vandita.png");
+    }
+    div.wish-wrap#jasprit:before {
+        background-image: url("https://assets-itkkids-001.fra1.cdn.digitaloceanspaces.com/prabjyot/jasprit.png");
     }
 }
 
