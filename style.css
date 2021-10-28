@@ -83,6 +83,175 @@ div#song-details>h1, div#song-details>span {
     white-space: nowrap;
 }
 
+.parallax-wrapper {
+    min-height: 100vh;
+}
+
+img.parallax-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* object-fit: cover; */
+}
+
+.bg, .field {
+    width: 100%;
+    height: 100%;
+}
+
+.grass-1 {
+    width: 100%;
+    top: 10% !important;
+}
+
+.goal {
+    width: 100%;
+    top: 40% !important;
+}
+
+.football {
+    width: 20%;
+    top: 80% !important;
+    left: 40% !important;
+}
+
+.bubble-1 {
+    left: 10% !important;
+}
+
+.pubby {
+    width: 100%;
+}
+
+.pubby-bubble {
+    width: 50%;
+    top: 20% !important;
+    left: 50% !important;
+}
+
+.trinisha {
+    width: 60%;
+    top: 15% !important;
+}
+
+@media screen and (min-width: 768px) {
+    .grass-1 {
+        width: 40%;
+        top: 25% !important;
+    }
+    .grass-2 {
+        left: unset !important;
+        top: 25% !important;
+    }
+    .goal {
+        width: 75%;
+        left: 10% !important;
+    }
+    .pubby {
+        width: 70%;
+    }
+    .pubby-bubble {
+        top: 15% !important;
+        left: 40% !important;
+    }
+    .trinisha {
+        width: 40%;
+        top: 10% !important;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    .grass-1 {
+        width: 40% !important;
+        top: 25% !important;
+    }
+    .grass-2 {
+        left: unset !important;
+        top: 25% !important;
+        width: 45% !important;
+    }
+    .goal {
+        width: 75% !important;
+        left: 10% !important;
+    }
+    .pubby {
+        width: 70% !important;
+        height: unset !important;
+    }
+    .pubby-bubble {
+        width: 40% !important;
+        top: 15% !important;
+        left: 40% !important;
+    }
+    .trinisha {
+        width: 40% !important;
+        top: 10% !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .grass-1 {
+        width: 20%;
+    }
+    .grass-2 {
+        width: 25%;
+    }
+    .goal {
+        width: 50%;
+        left: 25% !important;
+    }
+    .football {
+        width: 10%;
+        top: 80% !important;
+        left: 45% !important;
+    }
+    .bubble-1 {
+        left: 20% !important;
+    }
+    .bubble-2 {
+        left: 10% !important;
+    }
+    .footballer {
+        top: unset !important;
+        left: unset !important;
+        width: 50%;
+    }
+    .pubby {
+        width: unset;
+        height: 100%;
+        left: 10% !important;
+    }
+    .pubby-bubble {
+        width: 25%;
+    }
+    .trinisha {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .goal {
+        top: 25% !important;
+    }
+    .pubby {
+        height: 80%;
+        top: -10% !important;
+    }
+    .pubby-bubble {
+        left: 35% !important;
+    }
+    .football {
+        width: 8%;
+        top: 90% !important;
+    }
+    .footballer {
+        width: 40%;
+        right: 10% !important;
+    }
+}
+
 .first-section {
     background: linear-gradient(315deg, white, black);
 }

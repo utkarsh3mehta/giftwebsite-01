@@ -9,6 +9,15 @@ let songArtist = document.getElementById("song-artist");
 let songUrl = document.getElementById("song-url");
 let playpause = document.getElementById("play-pause");
 let playpauseIcon = playpause.querySelector("i");
+let parallaxImages = document.querySelectorAll(".parallax-layer");
+
+document.addEventListener("scroll", () => {
+  let scroll = window.scrollY;
+  parallaxImages.forEach((el) => {
+    let speed = el.dataset.speed;
+    el.style.transform = `translateY(${scroll * speed}px)`;
+  });
+});
 
 const songList = [
   {
