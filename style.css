@@ -307,6 +307,15 @@ div.quotes > blockquote::before {
     display: block;
 }
 
+footer {
+    background-color: lightgray;
+    color: black;
+}
+
+footer > span {
+    color: darkred;
+}
+
 @media screen and (min-width: 768px) {
     h1#songs-title {
         top: 25%;
