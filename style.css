@@ -6,6 +6,37 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
 }
 
+div#happy-budday {
+    background: white;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-attachment: fixed;
+}
+
+div#budday-wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(50deg, #5e00be, #f7ad29);
+    z-index: -1;
+}
+
+div#happy-budday>div.word>h2 {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+div#happy-budday>div.word>h2:nth-child(2n) {
+    padding-top: 15px;
+}
+
+div#happy-budday>div.word>h2:nth-child(2n - 1) {
+    padding-bottom: 15px;
+}
+
 div#favourite-songs {
     background: linear-gradient(45deg, black, darkgreen);
 }
@@ -261,7 +292,7 @@ h2.wisher-name {
     text-align: center;
 }
 
-blockquote.wisher-personal-story, div.quotes > blockquote {
+blockquote.wisher-personal-story, div.quotes>blockquote {
     font-family: Georgia, serif;
     font-size: 18px;
     font-style: italic;
@@ -293,12 +324,12 @@ img.wisher-photo.extra-long {
     bottom: -35%;
 }
 
-div.quotes > blockquote {
+div.quotes>blockquote {
     margin: 1em 0;
     position: relative;
 }
 
-div.quotes > blockquote::before {
+div.quotes>blockquote::before {
     content: "\201C";
     position: absolute;
     left: -10px;
@@ -312,11 +343,21 @@ footer {
     color: black;
 }
 
-footer > span {
+footer>span {
     color: darkred;
 }
 
 @media screen and (min-width: 768px) {
+    div#happy-budday>div.word>h2 {
+        font-size: 80px;
+        font-weight: 400;
+    }
+    div#happy-budday>div.word>h2:nth-child(2n) {
+        padding-top: 20px;
+    }
+    div#happy-budday>div.word>h2:nth-child(2n - 1) {
+        padding-bottom: 20px;
+    }
     h1#songs-title {
         top: 25%;
     }
