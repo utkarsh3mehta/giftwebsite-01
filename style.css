@@ -3,7 +3,109 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .vh-100 {
-    min-height: 100vh;
+    height: 100vh;
+}
+
+#open-personal-message {
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+#open-personal-message>i {
+    font-size: 20px;
+    color: black;
+}
+
+#personal-message {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
+
+#personal-message>h2, #personal-message>p {
+    background-color: black;
+    color: white;
+}
+
+#personal-message>h2 {
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+#personal-message>p {
+    margin-bottom: .1em;
+}
+
+.parallax-container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.parallax {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    scroll-snap-align: start;
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .parallax {
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 3em;
+        padding-top: 0;
+        padding-right: 0;
+    }
+}
+
+.parallax>span {
+    background-color: black;
+    color: white;
+}
+
+.parallax>span.heading {
+    font-size: 30px;
+    margin-bottom: 0.3em;
+}
+
+.mussoorie {
+    background-image: url('https://ik.imagekit.io/bizwem110d/gift-by/bad-luck/mussoorie_VAJ6CytiSXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643426247728');
+}
+
+.farewell-1 {
+    background-image: url('https://ik.imagekit.io/bizwem110d/gift-by/bad-luck/farewell_aeHEs_aJ1H.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643426248401');
+}
+
+.farewell-2 {
+    background-image: url('https://ik.imagekit.io/bizwem110d/gift-by/bad-luck/farewell_1_R4D_ybzgbknD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643426248022');
+}
+
+.dehradun {
+    background-image: url('https://ik.imagekit.io/bizwem110d/gift-by/bad-luck/white_house_DqD1OH_hN.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643426248111');
+}
+
+.your-budday {
+    background-image: url('https://ik.imagekit.io/bizwem110d/gift-by/bad-luck/your_budday_aoNitmN1q8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643426248218');
+}
+
+.bachha {
+    background-image: url('https://ik.imagekit.io/bizwem110d/gift-by/bad-luck/bachha_t378jdPxV.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643426248014');
 }
 
 div#happy-budday {
@@ -37,307 +139,6 @@ div#happy-budday>div.word>h2:nth-child(2n - 1) {
     padding-bottom: 15px;
 }
 
-div#favourite-songs {
-    background: linear-gradient(45deg, black, darkgreen);
-}
-
-h1#songs-title {
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-}
-
-div#song-list {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-img.song-tile {
-    object-fit: contain;
-    min-height: 250px;
-    min-width: 250px;
-    width: 250px;
-    height: 250px;
-    opacity: 0.4;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-img.song-tile:first-child {
-    margin-left: calc((100vw - 250px) / 2);
-}
-
-img.song-tile:last-child {
-    margin-right: calc((100vw - 250px) / 2);
-}
-
-img.song-tile.active {
-    opacity: 1;
-}
-
-div.arrow {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    border: 1px solid gray;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    cursor: pointer;
-    font-size: 30px;
-}
-
-div.arrow.left {
-    left: 5%;
-}
-
-div.arrow.right {
-    right: 5%;
-}
-
-div.arrow#play-pause {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-div#song-details {
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-}
-
-div#song-details>h1, div#song-details>span {
-    font-weight: 300;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-    white-space: nowrap;
-}
-
-.parallax-wrapper {
-    min-height: 100vh;
-}
-
-img.parallax-layer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    /* object-fit: cover; */
-}
-
-.bg, .field {
-    width: 100%;
-    height: 100%;
-}
-
-.grass-1 {
-    width: 100%;
-    top: 10% !important;
-}
-
-.goal {
-    width: 100%;
-    top: 40% !important;
-}
-
-.football {
-    width: 20%;
-    top: 80% !important;
-    left: 40% !important;
-}
-
-.bubble-1 {
-    left: 10% !important;
-}
-
-.pubby {
-    width: 100%;
-}
-
-.pubby-bubble {
-    width: 50%;
-    top: 20% !important;
-    left: 50% !important;
-}
-
-.trinisha {
-    width: 60%;
-    top: 15% !important;
-}
-
-@media screen and (min-width: 768px) {
-    .grass-1 {
-        width: 40%;
-        top: 25% !important;
-    }
-    .grass-2 {
-        left: unset !important;
-        top: 25% !important;
-    }
-    .goal {
-        width: 75%;
-        left: 10% !important;
-    }
-    .pubby {
-        width: 70%;
-    }
-    .pubby-bubble {
-        top: 15% !important;
-        left: 40% !important;
-    }
-    .trinisha {
-        width: 40%;
-        top: 10% !important;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-    .grass-1 {
-        width: 40% !important;
-        top: 25% !important;
-    }
-    .grass-2 {
-        left: unset !important;
-        top: 25% !important;
-        width: 45% !important;
-    }
-    .goal {
-        width: 75% !important;
-        left: 10% !important;
-    }
-    .pubby {
-        width: 70% !important;
-        height: unset !important;
-    }
-    .pubby-bubble {
-        width: 40% !important;
-        top: 15% !important;
-        left: 40% !important;
-    }
-    .trinisha {
-        width: 40% !important;
-        top: 10% !important;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .grass-1 {
-        width: 20%;
-    }
-    .grass-2 {
-        width: 25%;
-    }
-    .goal {
-        width: 50%;
-        left: 25% !important;
-    }
-    .football {
-        width: 10%;
-        top: 80% !important;
-        left: 45% !important;
-    }
-    .bubble-1 {
-        left: 20% !important;
-    }
-    .bubble-2 {
-        left: 10% !important;
-    }
-    .footballer {
-        top: unset !important;
-        left: unset !important;
-        width: 50%;
-    }
-    .pubby {
-        width: unset;
-        height: 100%;
-        left: 10% !important;
-    }
-    .pubby-bubble {
-        width: 25%;
-    }
-    .trinisha {
-        width: 25%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .goal {
-        top: 25% !important;
-    }
-    .pubby {
-        height: 80%;
-        top: -10% !important;
-    }
-    .pubby-bubble {
-        left: 35% !important;
-    }
-    .football {
-        width: 8%;
-        top: 90% !important;
-    }
-    .footballer {
-        width: 40%;
-        right: 10% !important;
-    }
-}
-
-.first-section {
-    background: linear-gradient(315deg, white, black);
-}
-
-h2.wisher-name {
-    font-size: 40px;
-    text-align: center;
-}
-
-blockquote.wisher-personal-story, div.quotes>blockquote {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    font-style: italic;
-    line-height: 1.45;
-    color: #383838;
-}
-
-blockquote.wisher-personal-story:before {
-    display: block;
-    padding-left: 10px;
-    content: "\201C";
-    font-size: 100px;
-    position: absolute;
-    left: -20px;
-    top: -20px;
-    color: #7a7a7a;
-}
-
-img.wisher-photo {
-    bottom: -10%;
-    filter: grayscale(100%);
-}
-
-img.wisher-photo.long {
-    bottom: -20%;
-}
-
-img.wisher-photo.extra-long {
-    bottom: -35%;
-}
-
-div.quotes>blockquote {
-    margin: 1em 0;
-    position: relative;
-}
-
-div.quotes>blockquote::before {
-    content: "\201C";
-    position: absolute;
-    left: -10px;
-    top: -10px;
-    font-size: 1.2em;
-    display: block;
-}
-
 footer {
     background-color: lightgray;
     color: black;
@@ -352,92 +153,12 @@ footer>span {
         font-size: 80px;
         font-weight: 400;
     }
+
     div#happy-budday>div.word>h2:nth-child(2n) {
         padding-top: 20px;
     }
+
     div#happy-budday>div.word>h2:nth-child(2n - 1) {
         padding-bottom: 20px;
-    }
-    h1#songs-title {
-        top: 25%;
-    }
-    div.arrow.left {
-        left: 20%;
-    }
-    div.arrow.right {
-        right: 20%;
-    }
-    div#song-details {
-        bottom: 25%;
-    }
-    blockquote.wisher-personal-story:before {
-        font-size: 150px;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-    .wisher-name {
-        text-align: center !important;
-    }
-    img.wisher-photo {
-        bottom: -10% !important;
-        opacity: 1 !important;
-    }
-    div.wish-wrap:before {
-        display: none !important;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    h1#songs-title {
-        top: 20%;
-    }
-    div.arrow.left {
-        left: 30%;
-    }
-    div.arrow.right {
-        right: 30%;
-    }
-    div#song-details {
-        bottom: 20%;
-    }
-    .wisher-name {
-        text-align: right;
-    }
-    div.wish-wrap:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.6;
-        filter: grayscale(100%);
-        background-repeat: no-repeat;
-        background-position: 150% 0;
-        background-size: contain;
-        background-attachment: fixed;
-    }
-    div.wish-wrap#utkarsh:before {
-        background-image: url('https://assets-itkkids-001.fra1.cdn.digitaloceanspaces.com/prabjyot/utkarsh.png');
-    }
-    div.wish-wrap#anushka:before {
-        background-image: url("https://assets-itkkids-001.fra1.cdn.digitaloceanspaces.com/prabjyot/anushka.png");
-    }
-    div.wish-wrap#vandita:before {
-        background-image: url("https://assets-itkkids-001.fra1.cdn.digitaloceanspaces.com/prabjyot/vandita.png");
-    }
-    div.wish-wrap#jasprit:before {
-        background-image: url("https://assets-itkkids-001.fra1.cdn.digitaloceanspaces.com/prabjyot/jasprit.png");
-    }
-    div.wish-wrap#meghna:before {
-        background-image: url("https://assets-itkkids-001.fra1.digitaloceanspaces.com/prabjyot/meghna.png");
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    div.wish-wrap:before {
-        background-position: 100% 0%;
     }
 }
